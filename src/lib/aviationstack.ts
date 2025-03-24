@@ -7,14 +7,12 @@ export async function fetchAirports() {
     if (!res.ok) throw new Error("Error en la API");
 
     const data = await res.json();
-    console.log(data);
     return {
       airports: data.data,
       pagination: data.pagination,
       error: null,
     };
   } catch (error) {
-    console.error("Error al obtener aeropuertos:", error);
     return {
       airports: [],
       pagination: null,

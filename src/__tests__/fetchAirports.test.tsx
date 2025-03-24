@@ -9,7 +9,7 @@ describe("fetchAirports", () => {
 
   it("hace una solicitud a la API y devuelve los aeropuertos", async () => {
     const mockResponse = {
-      data: [{ iata_code: "JFK", airport_name: "John F. Kennedy International Airport" }],
+      data: [{ iata_code: "TEST", airport_name: "Test" }],
       pagination: { total: 1 },
     };
 
