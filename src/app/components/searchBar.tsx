@@ -29,12 +29,12 @@ export default function SearchBar() {
     <form
       onSubmit={handleSearch}
       className={`mb-4 flex flex-col items-center justify-center gap-2 transition-all duration-1000 ${
-        hasSearched ? "flex-row" : ""
+        hasSearched ? "sm:flex-row" : ""
       }`}
     >
       <h1
         className={`text-gradient font-black shadow-text drop-shadow-md border-blue-500 p-2 duration-300 ${
-          !hasSearched ? "text-7xl w-full mb-20" : "text-4xl w-2/6"
+          !hasSearched ? "text-2xl sm:text-7xl w-full mb-20" : "text-xl sm:text-4xl w-full sm:w-2/6"
         }`}
       >
         SkyConnect Explorer
@@ -45,7 +45,7 @@ export default function SearchBar() {
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Buscar aeropuertos..."
         className={`border px-4 py-2 rounded-3xl bg-white text-sky-700 text-lg font-medium transition-all duration-1000 ${
-          !hasSearched ? "w-4/6" : "w-3/6"
+          !hasSearched ? "w-full sm:w-4/6" : "w-full sm:w-3/6"
         }`}
       />
       <button

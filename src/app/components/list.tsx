@@ -18,7 +18,7 @@ export default function AirportList() {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 w-full overflow-y-scroll lg:overflow-y-hidden h-full max-h-[70vh] sm:max-h-[80vh]">
+      <div className="grid grid-cols-1 sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 w-full overflow-y-scroll lg:overflow-y-hidden h-full max-h-[60vh] sm:max-h-[80vh]">
         {loading ? (
           Array.from({ length: itemsPerPage }).map((_, index) => (
             <CardSkeleton key={index} />
